@@ -323,3 +323,66 @@ font-size: clamp(1rem, 0.775rem + 0.4vw, 1.2rem);
   font-weight:700;
   font-size: 1rem;
 }
+
+.form-area{
+  max-width: 1140px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 50px;
+  span{
+    width: 50%;
+     font-size: clamp(2rem, 1.2381rem + 7.619vw, 5.9rem);
+  font-family: 'inter';
+  font-weight: bold;
+  }
+  @media (width < 600px) {
+    display: flex;
+    flex-direction: column;
+    span{
+      width: 100%;
+      text-align: center;
+    }
+    .input-area{
+      width: 100%;
+      padding-inline: .5rem;
+    }
+  }
+}
+.input-area{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+label{
+  display:flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: 'inter';
+  font-weight: 700;
+  font-size: 18px;
+}
+input{
+     min-width: 0;
+    width: 100%;
+    border: 1px solid #0000002d;
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+    border-radius: 10px;
+    outline: none;
+}
+
+::placeholder{
+  font-family: 'intel';
+  font-weight: 400;
+  font-size: 20px;
+}
+textarea{
+  border-radius: 10px;
+   outline: none;
+    border: 1px solid #0000002d;
+      padding-inline: 1.5rem;
+    padding-block: 1rem;
+}
