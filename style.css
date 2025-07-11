@@ -170,8 +170,8 @@ h2 {
 
 .Thousands-Of-Productive-Users {
   max-width: 1140px;
-  margin-inline: auto;
   background-color: #4d47ff17;
+  margin-inline: auto;
   margin-bottom: 50px;
   border-radius: 20px;
 }
@@ -239,7 +239,7 @@ h4 {
   }
 }
 .card {
-  width: 100%;
+  width: 90%;
   background-color: #ffffff;
   padding: 1.5rem;
   display: flex;
@@ -299,6 +299,7 @@ font-size: clamp(1rem, 0.775rem + 0.4vw, 1.2rem);
  padding-block: 60px;
  border-radius: 20px;
  margin-block: 70px;
+ padding-inline: 1.5rem;
 
  p{
     font-size: clamp(1rem, 0.3117rem + 1.2468vw, 1.4rem);
@@ -332,6 +333,7 @@ font-size: clamp(1rem, 0.775rem + 0.4vw, 1.2rem);
   justify-content: space-between;
   align-items: center;
   margin-block: 50px;
+  padding-inline: 1.5rem;
   span{
     width: 50%;
      font-size: clamp(2rem, 1.2381rem + 7.619vw, 5.9rem);
@@ -387,7 +389,16 @@ textarea{
       padding-inline: 1.5rem;
     padding-block: 1rem;
 }
-
+.get-in-touch-btn{
+  height: 62px;
+  background: #4e47ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'raleway';
+  font-weight: bold;
+}
 footer{
   background-color: white;
   padding-block: 5rem;
@@ -415,6 +426,7 @@ footer a{
 }
 
 .footer-div{
+  padding-inline: 1.5rem;
   max-width: 720px;
   display: flex;
   flex-direction: column;
