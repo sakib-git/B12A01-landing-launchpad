@@ -26,6 +26,12 @@
 @font-face {
   font-family:'inter';
   src: url(fonts/inter-v19-latin-700.woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family:'inter';
+  src: url(fonts/inter-v19-latin-regular.woff2);
+  font-weight: 400;
 }
 
 :root {
@@ -67,6 +73,7 @@ header {
   font-size: clamp(2rem, 1.5256rem + 2.0513vw, 3rem);
   color: color-mix(in srgb, #9403fd 50%, #00adfe 50%);
   font-family: 'inter';
+  font-weight: 800;
 }
 
 .SignupBtn {
@@ -265,7 +272,7 @@ font-size: clamp(1rem, 0.775rem + 0.4vw, 1.2rem);
     font-size: clamp(1rem, 0.3117rem + 1.2468vw, 1.2rem);
     color: #000000af;
     font-family:'inter';
-    font-weight: 700;
+    font-weight: 400;
   }
   .date {
     color: #0000008e;
@@ -278,4 +285,41 @@ font-size: clamp(1rem, 0.775rem + 0.4vw, 1.2rem);
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+.ready-to-better-area{
+    max-width: 1140px;
+  margin-inline: auto;
+  background-color: white;
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ align-items: center;
+ padding-block: 60px;
+ border-radius: 20px;
+ margin-block: 70px;
+
+ p{
+    font-size: clamp(1rem, 0.3117rem + 1.2468vw, 1.4rem);
+    font-family: 'inter';
+    font-weight: 400;
+    color: #00000091;
+    text-align: center;
+ }
+
+ img{
+  border-radius: 30px;
+ }
+}
+.Get-started-Btn{
+    width: 246px;
+  height: 48px;
+  background: #4e47ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'raleway';
+  font-weight:700;
+  font-size: 1rem;
 }
