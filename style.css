@@ -96,5 +96,66 @@ h1{
    cursor: pointer;
   font-family:'raleway';
   font-weight: 700;
-margin-top:37px;
+  margin-top:37px;
+}
+
+.action-section{
+  max-width: 1140px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  height: 330px;
+  margin-block: 20px;
+
+  & P{
+
+    color: #0000006b;
+    font-size: clamp(1rem, 0.6636rem + 1.4545vw, 1.7rem);
+    font-family:'raleway';
+    font-weight: 400;
+    width: 75%;
+  }
+
+}
+.action{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+@media (width < 700px) {
+  .action-section {
+    flex-direction: column;
+    gap: 20px; 
+  }
+
+     .action {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  
+}
+}
+
+.action-section img{
+  border-radius: 30px;
+}
+
+h2{
+  font-size: clamp(2rem, 1.5195rem + 2.0779vw, 3rem);
+    font-family:'raleway';
+  font-weight:bold;
+}
+.launchPreviewBtn{
+  width: 229px;
+  height: 48px;
+    background:#4E47FF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family:'raleway';
+  font-weight:bold;
+
 }
