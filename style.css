@@ -61,6 +61,7 @@ header {
   gap: 158px;
   @media (width < 600px) {
     gap: 100px;
+    padding-inline:.3rem ;
   }
 }
 .nav {
@@ -385,4 +386,42 @@ textarea{
     border: 1px solid #0000002d;
       padding-inline: 1.5rem;
     padding-block: 1rem;
+}
+
+footer{
+  background-color: white;
+  padding-block: 5rem;
+  display: flex;
+  justify-content: center;
+  p{
+        font-size: clamp(1rem, 0.3117rem + 1.2468vw, 1.4rem);
+    font-family: 'inter';
+    font-weight: 400;
+    color: #00000091;
+    text-align: center;
+  }
+}
+
+footer a{
+  text-decoration: none;
+  color: #000000ad;
+  font-family: 'inter';
+  font-family: 400;
+}
+.link-area{
+  display: flex;
+  gap: 60px;
+  color: #000;
+}
+
+.footer-div{
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  span{
+    font-size: clamp(2rem, 1.2381rem + 7.619vw, 5.9rem);
+  }
 }
