@@ -24,12 +24,22 @@
   font-weight: 800;
 }
 @font-face {
-  font-family:'inter';
+  font-family: 'inter';
   src: url(fonts/inter-v19-latin-700.woff2);
   font-weight: 700;
 }
 @font-face {
-  font-family:'inter';
+  font-family: 'inter';
+  src: url(fonts/inter-v19-latin-600.woff2);
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'inter';
+  src: url(fonts/inter-v19-latin-500.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'inter';
   src: url(fonts/inter-v19-latin-regular.woff2);
   font-weight: 400;
 }
@@ -61,7 +71,7 @@ header {
   gap: 158px;
   @media (width < 600px) {
     gap: 100px;
-    padding-inline:.3rem ;
+    padding-inline: 0.3rem;
   }
 }
 .nav {
@@ -87,6 +97,14 @@ header {
   cursor: pointer;
   font-family: 'raleway';
   font-weight: 700;
+    &:hover{
+        background-color: transparent;
+    border: 1px solid #4e47ff;
+    color: #4e47ff;
+    box-shadow: -10px 6px  0px   #4e47ff;
+    transition: all 500ms ease-in-out;
+  }
+
 }
 .headingTag {
   max-width: 905px;
@@ -109,6 +127,13 @@ h1 {
   font-family: 'raleway';
   font-weight: 700;
   margin-top: 37px;
+  &:hover{
+        background-color: transparent;
+    border: 1px solid #4e47ff;
+    color: #4e47ff;
+    box-shadow: -10px 6px  0px   #4e47ff;
+    transition: all 500ms ease-in-out;
+  }
 }
 
 .action-section {
@@ -166,6 +191,13 @@ h2 {
   cursor: pointer;
   font-family: 'raleway';
   font-weight: bold;
+  &:hover{
+        background-color: transparent;
+    border: 1px solid #4e47ff;
+    color: #4e47ff;
+    box-shadow: -10px 6px  0px   #4e47ff;
+    transition: all 500ms ease-in-out;
+  }
 }
 
 .Thousands-Of-Productive-Users {
@@ -250,8 +282,10 @@ h4 {
 
   & p {
     color: #000000c0;
-   font-size: clamp(1.2rem, 0.5558rem + 0.6234vw, 1rem);
+    font-size: clamp(1.2rem, 0.5558rem + 0.6234vw, 1rem);
     margin-top: 8px;
+    font-family: 'inter';
+    font-weight: 400;
   }
 }
 
@@ -261,8 +295,9 @@ h4 {
 }
 
 h5 {
-font-size: clamp(1rem, 0.775rem + 0.4vw, 1.2rem);
-  font-family: 'inter';
+  font-size: clamp(1rem, 0.775rem + 0.4vw, 1.2rem);
+  font-family: 'raleway';
+  font-weight: 800;
 }
 .card-img-area {
   display: flex;
@@ -271,12 +306,13 @@ font-size: clamp(1rem, 0.775rem + 0.4vw, 1.2rem);
 
   .name {
     font-size: clamp(1rem, 0.3117rem + 1.2468vw, 1.2rem);
-    color: #000000af;
-    font-family:'inter';
-    font-weight: 400;
+    color: #00000086;
+    font-family: 'inter';
+    font-weight: 500;
   }
   .date {
-    color: #0000008e;
+    color: #00000046;
+    font-family: 'inter';
   }
 }
 .card-img-area img {
@@ -288,33 +324,33 @@ font-size: clamp(1rem, 0.775rem + 0.4vw, 1.2rem);
   gap: 4px;
 }
 
-.ready-to-better-area{
-    max-width: 1140px;
+.ready-to-better-area {
+  max-width: 1140px;
   margin-inline: auto;
   background-color: white;
- display: flex;
- flex-direction: column;
- gap: 20px;
- align-items: center;
- padding-block: 60px;
- border-radius: 20px;
- margin-block: 70px;
- padding-inline: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-block: 60px;
+  border-radius: 20px;
+  margin-block: 70px;
+  padding-inline: 1.5rem;
 
- p{
+  p {
     font-size: clamp(1rem, 0.3117rem + 1.2468vw, 1.4rem);
     font-family: 'inter';
     font-weight: 400;
     color: #00000091;
     text-align: center;
- }
+  }
 
- img{
-  border-radius: 30px;
- }
+  img {
+    border-radius: 30px;
+  }
 }
-.Get-started-Btn{
-    width: 246px;
+.Get-started-Btn {
+  width: 246px;
   height: 48px;
   background: #4e47ff;
   color: white;
@@ -322,11 +358,12 @@ font-size: clamp(1rem, 0.775rem + 0.4vw, 1.2rem);
   border-radius: 10px;
   cursor: pointer;
   font-family: 'raleway';
-  font-weight:700;
+  font-weight: 700;
   font-size: 1rem;
+
 }
 
-.form-area{
+.form-area {
   max-width: 1140px;
   margin-inline: auto;
   display: flex;
@@ -334,62 +371,72 @@ font-size: clamp(1rem, 0.775rem + 0.4vw, 1.2rem);
   align-items: center;
   margin-block: 50px;
   padding-inline: 1.5rem;
-  span{
+  span {
     width: 50%;
-     font-size: clamp(2rem, 1.2381rem + 7.619vw, 5.9rem);
-  font-family: 'inter';
-  font-weight: bold;
+    font-size: clamp(2rem, 1.2381rem + 7.619vw, 5.9rem);
+    font-family: 'inter';
+    font-weight: bold;
   }
   @media (width < 600px) {
     display: flex;
     flex-direction: column;
-    span{
+    span {
       width: 100%;
       text-align: center;
     }
-    .input-area{
+    .input-area {
       width: 100%;
-      padding-inline: .5rem;
+      padding-inline: 0.5rem;
     }
   }
 }
-.input-area{
+.input-area {
   width: 50%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-label{
-  display:flex;
+label {
+  display: flex;
   flex-direction: column;
   gap: 5px;
   font-family: 'inter';
-  font-weight: 700;
+  font-weight: 600;
   font-size: 18px;
 }
-input{
-     min-width: 0;
-    width: 100%;
-    border: 1px solid #0000002d;
-    padding-inline: 1.5rem;
-    padding-block: 1rem;
-    border-radius: 10px;
-    outline: none;
+input {
+  min-width: 0;
+  width: 100%;
+  border: 1px solid #0000002d;
+  padding-inline: 1.5rem;
+  padding-block: 1rem;
+  border-radius: 10px;
+  outline: none;
+  margin-top: 5px;
 }
 
-::placeholder{
+/* ::placeholder{
   font-family: 'intel';
-  font-weight: 400;
   font-size: 20px;
-}
-textarea{
+  color: #0000004d;
+} */
+textarea {
   border-radius: 10px;
-   outline: none;
-    border: 1px solid #0000002d;
-      padding-inline: 1.5rem;
-    padding-block: 1rem;
+  outline: none;
+  border: 1px solid #0000002d;
+  padding-inline: 1.5rem;
+  padding-block: 1rem;
+  margin-top: 5px;
+  resize: none;
 }
-.get-in-touch-btn{
+
+input,
+textarea {
+  font-family: 'inter', sans-serif;
+  font-size: 1rem;
+}
+
+.get-in-touch-btn {
   height: 62px;
   background: #4e47ff;
   color: white;
@@ -398,14 +445,21 @@ textarea{
   cursor: pointer;
   font-family: 'raleway';
   font-weight: bold;
+    &:hover{
+        background-color: transparent;
+    border: 1px solid #4e47ff;
+    color: #4e47ff;
+    box-shadow: -10px 6px  0px   #4e47ff;
+    transition: all 500ms ease-in-out;
 }
-footer{
+}
+footer {
   background-color: white;
   padding-block: 5rem;
   display: flex;
   justify-content: center;
-  p{
-        font-size: clamp(1rem, 0.3117rem + 1.2468vw, 1.4rem);
+  p {
+    font-size: clamp(1rem, 0.3117rem + 1.2468vw, 1.4rem);
     font-family: 'inter';
     font-weight: 400;
     color: #00000091;
@@ -413,19 +467,19 @@ footer{
   }
 }
 
-footer a{
+footer a {
   text-decoration: none;
   color: #000000ad;
   font-family: 'inter';
   font-family: 400;
 }
-.link-area{
+.link-area {
   display: flex;
   gap: 60px;
   color: #000;
 }
 
-.footer-div{
+.footer-div {
   padding-inline: 1.5rem;
   max-width: 720px;
   display: flex;
@@ -433,7 +487,7 @@ footer a{
   align-items: center;
   gap: 20px;
 
-  span{
+  span {
     font-size: clamp(2rem, 1.2381rem + 7.619vw, 5.9rem);
   }
 }
